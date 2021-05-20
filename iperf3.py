@@ -43,7 +43,7 @@ def network_test(server_ip, server_port, test_time, reverse):
     return send_mbit_s, recv_mbit_s
 
 
-def handler(event, context):
+def main(event, context):
 #     server_ip = int(sys.argv[1])
 #     server_port = int(sys.argv[2])
 #     test_time = int(sys.argv[3])
