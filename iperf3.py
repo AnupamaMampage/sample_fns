@@ -51,7 +51,7 @@ def main(event, context):
 #     reverse = event['data[reverse]']
 
 #     send_mbit_s, recv_mbit_s = network_test(server_ip, server_port, test_time, reverse)
-    send_mbit_s, recv_mbit_s = network_test(45.113.235.133, 5201, 10, True)
+    send_mbit_s, recv_mbit_s = network_test("45.113.235.133", "5201", "10", "True")
 
     return "Hello"
 #     return {'send_mbit_s': str(send_mbit_s), 'recv_mbit_s': str(recv_mbit_s)}
