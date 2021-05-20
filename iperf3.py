@@ -2,10 +2,6 @@ import subprocess
 import json
 # import sys
 
-"""
-iPerf3 :  The ultimate speed test tool for TCP, UDP and SCTP
-doc : https://iperf.fr/iperf-doc.php
-"""
 
 kilo = 1000
 byte = 8
