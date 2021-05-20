@@ -4,8 +4,7 @@ import math
 
 def main(event, context):
   start=time()
-#   n = int(event['data'])
-  n = int(sys.argv[1])
+  n = int(event['data'])
   for i in range(0, n):
           sin_i = math.sin(i)
           cos_i = math.cos(i)
