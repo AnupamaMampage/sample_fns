@@ -52,4 +52,4 @@ def main(event, context):
 
     send_mbit_s, recv_mbit_s = network_test(server_ip, server_port, test_time, reverse)
 
-    return {'send_mbit_s': send_mbit_s, 'recv_mbit_s': recv_mbit_s}
+    return {'send_mbit_s': str(send_mbit_s), 'recv_mbit_s': str(recv_mbit_s)}
