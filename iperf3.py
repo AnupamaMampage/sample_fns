@@ -45,10 +45,10 @@ def main(event, context):
 #     test_time = int(sys.argv[3])
 #     reverse = sys.argv[4]
 
-    server_ip = event['server_ip']
-    server_port = event['server_port']
-    test_time = event['test_time']
-    reverse = event['reverse']
+    server_ip = event['data[server_ip]']
+    server_port = event['data[server_port]']
+    test_time = event['data[test_time]']
+    reverse = event['data[reverse]']
 
     send_mbit_s, recv_mbit_s = network_test(server_ip, server_port, test_time, reverse)
 
