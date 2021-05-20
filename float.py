@@ -1,6 +1,7 @@
 import time
 from time import time
 import math
+
 def main(event, context):
   start=time()
   n = int(event['data'])
