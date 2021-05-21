@@ -1,7 +1,7 @@
 import iperf3
 
 def main(event, context):
-    client = iperf3.Client()
+    client = iperf3.Client(lib_name='/usr/local/lib/libiperf.so.0')
     client.duration = 1
     client.server_hostname = '45.113.235.133'
     client.port = 5201
