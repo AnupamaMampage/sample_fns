@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import iperf3
 
 def main(event, context):
