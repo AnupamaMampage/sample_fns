@@ -1,6 +1,7 @@
 import iperf3
 
-def main(event, context):
+print(main())
+def main():
     client = iperf3.Client()
     client.duration = 1
     client.server_hostname = '45.113.235.133'
