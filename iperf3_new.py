@@ -28,4 +28,4 @@ def main(event, context):
         print('  KiloBytes per second (kB/s)  {0}'.format(result.kB_s))
         print('  MegaBytes per second (MB/s)  {0}'.format(result.MB_s))
         
-    retun "Hello"
+    return "Hello"
