@@ -1,7 +1,8 @@
 import speedtest
 
 def main(event, context):
+  s = speedtest.Speedtest()
 #   print(dir(speedtest))
-  return (dir(speedtest))
-#   s = speedtest.Speedtest()
+  return (s.download())
+  
 
