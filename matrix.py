@@ -23,7 +23,7 @@ def matrix(event, context):
             matrixMult[i][j] = sum
             
     latency= time()- start
-    print matrixMult
+    print (matrixMult)
     
     return str(latency)
 
