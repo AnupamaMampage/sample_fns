@@ -1,6 +1,7 @@
 import math
 import random
 import sys
+import time
 from time import time
 
 def randomTable(n):
@@ -24,5 +25,5 @@ def matrix(event, context):
     latency= time()- start
     print matrixMult
     
-    return latency
+    return str(latency)
 
