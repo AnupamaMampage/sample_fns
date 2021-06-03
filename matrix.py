@@ -25,5 +25,5 @@ def matrix(event, context):
     latency= time()- start
     print(matrixMult)
     
-    return str(latency)
+    return str(Hello Matrix)
 
