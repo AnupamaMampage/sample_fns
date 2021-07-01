@@ -17,15 +17,15 @@ def test():
 
 def speed(event,context):
     # write to csv
-
+    d, u, p = 0
     for i in range(3):
         print('Making test #{}'.format(i+1))
         d, u, p = test()
         print("Download: ",d)
-        print("Upload: ", d)
-        print("Ping: ", d)
+        print("Upload: ", u)
+        print("Ping: ", p)
         
-     return str(d)
+     return "d: " + str(d) + "u: " + str(u) + "p: " + str(p)
 
 
 
