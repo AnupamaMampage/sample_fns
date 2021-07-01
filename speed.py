@@ -25,7 +25,7 @@ def speed(event,context):
         print("Upload: ", u)
         print("Ping: ", p)
         
-     return "d: " + str(d) + "u: " + str(u) + "p: " + str(p)
+    return "d: " + str(d) + "u: " + str(u) + "p: " + str(p)
 
 
 
