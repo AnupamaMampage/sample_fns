@@ -9,5 +9,4 @@ def file(event, context):
         line = f.read()
     
     f.close()
-
     return "FILE OPERATION ENDs"
