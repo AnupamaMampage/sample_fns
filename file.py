@@ -1,10 +1,11 @@
-import numpy as np
-from random import gauss
-
 def file(event, context):
-    a1 = [gauss(1.5, 2) for i in range(10000000)]
-    import pickle
-    pkl_file = open("serialized_data3.pkl", 'wb')
+    f = open("demo1.txt", "w")
+    for i in range(100):
+        f.write("This is line ", i)
 
-    pickle.dump(a1, pkl_file)
+    f.close()
+    f = open("demo1.txt", "r")
+    for i in range(100):
+        line = f.read()
+
     return "FILE OPERATION ENDs"
