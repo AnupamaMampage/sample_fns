@@ -1,16 +1,16 @@
 from random import gauss
 
 def file(event, context):
-    f = open("kubeless/demo1.txt", "w")
-    for i in range(10000):
-        a1 = [gauss(1.5, 2) for i in range(1000000)]
-        f.write(str(a1)+"\n")
+    fi = open("kubeless/demo1.txt", "wb")
+    for i in range(1000):
+        a1 = [gauss(1.5, 2) for i in range(10000)]
+        pickle.dump(a1, fi)
 
-    f.close()
-    f = open("kubeless/demo1.txt", "r")
-    for i in range(10000):
-        a2 = f.read()
+    fi.close()
+    fo = open("kubeless/demo1.txt", "rb")
+    for i in range(1000):
+        a2 = pickle.load(fo)
 
-    f.close()
+    fo.close()
    
     return "FILE OPERATION ENDs"
