@@ -1,4 +1,5 @@
 from random import gauss
+import pickle
 
 def file(event, context):
     fi = open("kubeless/demo1.txt", "wb")
