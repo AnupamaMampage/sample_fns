@@ -12,21 +12,23 @@ def test():
     s.download()
     s.upload()
     res = s.results.dict()
-    return res["download"], res["upload"], res["ping"]
+    d = res["download"]
+    u = res["upload"]
+    p = res["ping"]
+    
+    return "d: " + str(d) + "u: " + str(u) + "p: " + str(p)
 
 
 def speed(event,context):
     # write to csv
     d, u, p = 0
+    result = np.zeros(3)
     for i in range(3):
         print('Making test #{}'.format(i+1))
-        d, u, p = test()
-        print("Download: ",d)
-        print("Upload: ", u)
-        print("Ping: ", p)
+        result[i] = test()
         
-    return "d: " + str(d) + "u: " + str(u) + "p: " + str(p)
-
+        
+    return result
 
 
   
