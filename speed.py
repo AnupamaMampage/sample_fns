@@ -20,7 +20,7 @@ def test():
 
 def speed(event,context):
     # write to csv
-    d, u, p = 0
+    
     result = np.zeros(3)
     for i in range(3):
         print('Making test #{}'.format(i+1))
