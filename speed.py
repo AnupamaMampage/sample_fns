@@ -29,7 +29,7 @@ def speed(event,context):
         print(result[i])
         
         
-    return result[0]
+    return "Test Completed"
 
 
   
