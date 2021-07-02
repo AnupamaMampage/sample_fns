@@ -12,12 +12,11 @@ def test():
     s.download()
     s.upload()
     res = s.results.dict()
-    d = res["download"]
-    u = res["upload"]
-    p = res["ping"]
+#     d = res["download"]
+#     u = res["upload"]
+#     p = res["ping"]
     
-    return "d: " + str(d) + "u: " + str(u) + "p: " + str(p)
-
+    return res
 
 def speed(event,context):
     # write to csv
