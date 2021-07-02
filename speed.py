@@ -7,16 +7,16 @@ import speedtest
 
 def test():
     s = speedtest.Speedtest()
-    s.get_servers()
-    s.get_best_server()
-    s.download()
-    s.upload()
-    res = s.results.dict()
+#     s.get_servers()
+#     s.get_best_server()
+#     s.download()
+#     s.upload()
+#     res = s.results.dict()
 #     d = res["download"]
 #     u = res["upload"]
 #     p = res["ping"]
     
-    return res
+    return (str(s.download()))
 
 def speed(event,context):
     # write to csv
