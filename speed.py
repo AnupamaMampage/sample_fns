@@ -1,4 +1,5 @@
 import speedtest
+import numpy as  np
 
 # def main(event, context):
 #   s = speedtest.Speedtest()
