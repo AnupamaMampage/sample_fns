@@ -26,9 +26,10 @@ def speed(event,context):
     for i in range(3):
         print('Making test #{}'.format(i+1))
         result[i] = test()
+        print(result[i])
         
         
-    return result
+    return result[0]
 
 
   
