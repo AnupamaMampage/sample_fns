@@ -10,12 +10,12 @@ def file(event, context):
     path = "kubeless/"+ file_name
     fi = open(path, "wb")
     for i in range(1000):
-        a1 = [gauss(1.5, 2) for i in range(1000)]
+        a1 = [gauss(1.5, 2) for i in range(10000)]
         pickle.dump(a1, fi)
 
     fi.close()
     fo = open(path, "rb")
-    for i in range(1000):
+    for i in range(10000):
         a2 = pickle.load(fo)
 
     fo.close()
