@@ -15,7 +15,7 @@ def file(event, context):
 
     fi.close()
     fo = open(path, "rb")
-    for i in range(1000):
+    for i in range(100):
         a2 = pickle.load(fo)
 
     fo.close()
