@@ -14,11 +14,11 @@ def file(event, context):
         pickle.dump(a1, fi)
 
     fi.close()
-#     fo = open(path, "rb")
-#     for i in range(750):
-#         a2 = pickle.load(fo)
+    fo = open(path, "rb")
+    for i in range(750):
+        a2 = pickle.load(fo)
 
-#     fo.close()
+    fo.close()
     if os.path.exists(path):
         os.remove(path)    
    
