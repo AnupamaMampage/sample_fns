@@ -19,7 +19,7 @@ def file(event, context):
         a2 = pickle.load(fo)
 
     fo.close()
-    if os.path.exists(path):
-        os.remove(path)    
+#     if os.path.exists(path):
+#         os.remove(path)    
    
     return "FILE OPERATION ENDs"
