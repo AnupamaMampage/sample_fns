@@ -13,12 +13,12 @@ def file(event, context):
         a1 = [gauss(1.5, 2) for i in range(7500)]
         pickle.dump(a1, fi)
 
-#     fi.close()
+    fi.close()
 #     fo = open(path, "rb")
 #     for i in range(750):
 #         a2 = pickle.load(fo)
 
-    fo.close()
+#     fo.close()
     if os.path.exists(path):
         os.remove(path)    
    
