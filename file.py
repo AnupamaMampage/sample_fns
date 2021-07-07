@@ -9,7 +9,7 @@ def file(event, context):
     file_name = ''.join(random.choice(letters) for i in range(10))
     path = "kubeless/"+ file_name
     fi = open(path, "wb")
-    for i in range(100000):
+    for i in range(10000):
         a1 = [gauss(1.5, 2) for i in range(1000)]
         pickle.dump(a1, fi)
 
