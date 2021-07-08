@@ -14,7 +14,7 @@ def dd(event, context):
     if os.path.exists(ip_path):
 #         for i in range(300000):
         print("Hello the file exists")
-        os.system('dd if=ip_path of=op_path')
+        os.system('dd if=/kubeless/testi.txt of=/kubeless/testo.txt')
     else:
         fi = open(ip_path, "wb")
         for i in range(1000):
