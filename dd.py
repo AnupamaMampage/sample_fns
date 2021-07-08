@@ -13,6 +13,7 @@ def dd(event, context):
     op_path  = "kubeless/" + op_file_name
     if os.path.exists(ip_path):
 #         for i in range(300000):
+        print("Hello the file exists")
         os.system('sudo time dd if=ip_path of=op_path')
     else:
         fi = open(ip_path, "wb")
