@@ -24,11 +24,11 @@ def test():
 def speed(event,context):
     # write to csv
     start= time()
-    result = np.zeros(3)
+    result = np.zeros(10)
     for i in range(3):
         print('Making test #{}'.format(i+1))
         result[i] = test()
-        print(result[i])
+#         print(result[i])
         
     latency= time()- start   
     return "Speed: " + str(latency)
