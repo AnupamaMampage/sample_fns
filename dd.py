@@ -1,11 +1,12 @@
 import os, time
+from time import time
 import pickle
 import random
 import string
 from random import gauss
 
 def main(event, context):
-
+    start= time()
     ip_file_name = "testi.txt"
     op_file_name = "testo.txt"
     ip_path = "kubeless/" + ip_file_name
@@ -20,5 +21,7 @@ def main(event, context):
             pickle.dump(a1, fi)
 
         fi.close()
+        
+    latency= time()- start
 
-    return "echo END"
+    return "dd: " + str(latency)
