@@ -5,7 +5,7 @@ import random
 import string
 from random import gauss
 
-def main(event, context):
+def dd(event, context):
     start= time()
     ip_file_name = "testi.txt"
     op_file_name = "testo.txt"
