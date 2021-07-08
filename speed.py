@@ -1,5 +1,7 @@
 import speedtest
 import numpy as  np
+import time
+from time import time
 
 # def main(event, context):
 #   s = speedtest.Speedtest()
@@ -21,15 +23,15 @@ def test():
 
 def speed(event,context):
     # write to csv
-    
+    start= time()
     result = np.zeros(3)
     for i in range(3):
         print('Making test #{}'.format(i+1))
         result[i] = test()
         print(result[i])
         
-        
-    return "Test Completed"
+    latency= time()- start   
+    return "Speed: " + str(latency)
 
 
   
