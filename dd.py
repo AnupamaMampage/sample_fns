@@ -9,8 +9,8 @@ def dd(event, context):
     start= time()
     ip_file_name = "testi.txt"
     op_file_name = "testo.txt"
-    ip_path = "kubeless/" + ip_file_name
-    op_path  = "kubeless/" + op_file_name
+    ip_path = "/kubeless/" + ip_file_name
+    op_path  = "/kubeless/" + op_file_name
     if os.path.exists(ip_path):
 #         for i in range(300000):
         print("Hello the file exists")
