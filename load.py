@@ -8,7 +8,7 @@ def load(event, context):
 
     start = time()
     f = urlopen(link)
-    data = f.read().decode()
+    data = f.read().decode("utf-8","ignore")
     network = time() - start
 
     start = time()
