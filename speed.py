@@ -24,8 +24,8 @@ def test():
 def speed(event,context):
     # write to csv
     start= time()
-    result = np.zeros(5)
-    for i in range(5):
+    result = np.zeros(1)
+    for i in range(1):
         print('Making test #{}'.format(i+1))
         result[i] = test()
 #         print(result[i])
