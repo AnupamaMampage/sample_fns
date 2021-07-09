@@ -3,7 +3,7 @@ from urllib.request import urlopen
 from time import time
 
 
-def json_load(event, context):
+def load(event, context):
     link = 'https://blockchain.info/latestblock' # https://github.com/jdorfman/awesome-json-datasets
 
     start = time()
