@@ -6,7 +6,7 @@ from time import time
 
 
 
-def iperf3(event, context):
+def iper(event, context):
     # write to csv
     start = time()
     print ("Here")
