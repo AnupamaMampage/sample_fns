@@ -5,10 +5,15 @@ from time import time
 
 def load(event, context):
     link = 'https://raw.githubusercontent.com/AnupamaMampage/sample_fns/main/data.json' # https://github.com/jdorfman/awesome-json-datasets
-
+    
     start = time()
     f = urlopen(link)
-    data = f.read().decode("utf-8","ignore")
+    try:
+        data = f.read().decode("utf-8","ignore")   
+    except json.decoder.JSONDecodeError:
+        error = "error"
+    
+    
     network = time() - start
 
     start = time()
