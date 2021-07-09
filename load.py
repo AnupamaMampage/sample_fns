@@ -8,18 +8,28 @@ def load(event, context):
     
     start = time()
     f = urlopen(link)
-    try:
-        data = f.read().decode("utf-8","ignore")   
-    except json.decoder.JSONDecodeError:
-        error = "error"
-    
-    
+    data = f.read().decode("utf-8")
     network = time() - start
-
+    
     start = time()
     json_data = json.loads(data)
     str_json = json.dumps(json_data, indent=4)
     latency = time() - start
+    
+#     start = time()
+#     f = urlopen(link)
+#     try:
+#         data = f.read().decode("utf-8","ignore")   
+#     except json.decoder.JSONDecodeError:
+#         error = "error"
+    
+    
+#     network = time() - start
+
+#     start = time()
+#     json_data = json.loads(data)
+#     str_json = json.dumps(json_data, indent=4)
+#     latency = time() - start
 
     # print(str_json)
     return {"network": network, "serialization": latency}
