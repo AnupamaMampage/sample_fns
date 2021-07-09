@@ -10,7 +10,7 @@ def iper(event, context):
     # write to csv
     start = time()
     print ("Here")
-    os.system('sudo iperf3 -c 45.113.232.219')
+    os.system('iperf3 -c 45.113.232.219')
 
     latency = time() - start
     return "iperf3: " + str(latency)
