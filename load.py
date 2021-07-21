@@ -11,10 +11,10 @@ def load(event, context):
     data = f.read().decode("utf-8")
     network = time() - start
     
-    start = time()
-    json_data = json.loads(data)
-    str_json = json.dumps(json_data, indent=4)
-    latency = time() - start
+#     start = time()
+#     json_data = json.loads(data)
+#     str_json = json.dumps(json_data, indent=4)
+#     latency = time() - start
     
 #     start = time()
 #     f = urlopen(link)
@@ -32,5 +32,6 @@ def load(event, context):
 #     latency = time() - start
 
     # print(str_json)
-    return {"network": network, "serialization": latency}
+#     return {"network": network, "serialization": latency}
+    return {"network": network}
 
