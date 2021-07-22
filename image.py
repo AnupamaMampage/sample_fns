@@ -3,7 +3,7 @@ import requests
 from io import BytesIO
 from time import time
 
-def load(event, context):
+def image(event, context):
   basewidth = 300
   url = 'https://raw.githubusercontent.com/AnupamaMampage/sample_fns/main/cat.jpg'
   start = time()
