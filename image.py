@@ -15,4 +15,4 @@ def image(event, context):
 
   latency = time() - start
   
-  return {"Latency: image: " latency}
+  return {"Latency: image: " +str(latency)}
